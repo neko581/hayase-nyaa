@@ -1,0 +1,21 @@
+{
+    "name": "hayase-nyaa",
+    "version": "1.0.0",
+    "description": "Nyaa.si search extension for Hayase",
+    "main": "hayase/index.json",
+    "author": "neko581",
+    "license": "WTFPL",
+    "type": "module",
+    "keywords": [
+        "hayase",
+        "nyaa",
+        "nyaa.si",
+        "torrent",
+        "anime",
+        "extension"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/neko581/hayase-nyaa.git"
+    }
+}
