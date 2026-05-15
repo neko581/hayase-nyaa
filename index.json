@@ -2,9 +2,11 @@
   {
     "name": "Hayase Nyaa (neko581)",
     "id": "neko581.hayase.nyaa",
+    "manifestVersion": 2,
     "version": "1.0.0",
     "type": "torrent",
     "accuracy": "medium",
+    "updatePeers": true,
     "ratio": 0,
     "media": "sub",
     "languages": ["JP", "US"],

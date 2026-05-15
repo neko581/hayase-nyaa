@@ -11,7 +11,7 @@
 
 /**
  * @typedef {import("./types")} HayaseExtensionTypes
- * @typedef {HayaseExtensionTypes.TorrentQuery} TorrentQuery
+ * @typedef {HayaseExtensionTypes.AnimeQuery} AnimeQuery
  * @typedef {HayaseExtensionTypes.TorrentResult} TorrentResult
  */
 
@@ -23,7 +23,7 @@ class Nyaa {
 
     /**
      * Used for single episode searches
-     * @param {TorrentQuery} query
+     * @param {AnimeQuery} query
      * @param {Record<string, string | number | boolean>?} options
      * @returns {Promise<TorrentResult[]>}
      */
@@ -155,24 +155,11 @@ class Nyaa {
 
     /**
      * Used for batch searches
-     * @param {TorrentQuery} query
+     * @param {AnimeQuery} query
      * @param {Record<string, string | number | boolean>?} options
      * @returns {Promise<TorrentResult[]>}
      */
     async batch(query, options) {
-        // From the docs:
-        // However, if the extension doesn't differentiate between these types of searches,
-        // it can just implement one of them and return results for all types of queries,
-        // or return no results for the types of queries it doesn't support
-        return this.single(query, options);
-    }
-    /**
-     * Used for movie searches
-     * @param {TorrentQuery} query
-     * @param {Record<string, string | number | boolean>?} options
-     * @returns {Promise<TorrentResult[]>}
-     */
-    async movie(query, options) {
         // From the docs:
         // However, if the extension doesn't differentiate between these types of searches,
         // it can just implement one of them and return results for all types of queries,
